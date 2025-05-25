@@ -1,40 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>rock_paper_scissors</title>
-  <link rel="stylesheet" href="./src/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./src/style.css">
+   
 </head>
 <body>
-  <section>
-    <div class="container">
-      <div class="elements">
-        <div class="element" >
-         <button class="btn"> ✊ 
-          <span class="btn-text">Rock</span>
-          </button>
-        </div>
-         
-        <div class="element" >
-         <button class="btn"> 🤚
-          <span class="btn-text">Paper</span>
-          </button>
-        </div>
-        <div class="element" >
-         <button class="btn"> ✌️ 
-          <span class="btn-text">Scissors</span>
-          </button>
+    <div class="game-container">
+        <header>
+            <div class="copyright">© 2025 maina mwangi</div>
+            <div class="scores">computer 0 0 player</div>
+        </header>
+
+        <div class="computer">
+            <h2>Computer</h2>
+            <div class="choice-display" id="computer-choice">
+                <span class="hand-emoji">✌️</span>
             </div>
-    
         </div>
-      </div>
 
+        <div class="status-banner">
+            <span id="game-status">its a draw</span>
+        </div>
+
+        <div class="player">
+            <h2>Player</h2>
+            <div class="choice-display" id="player-choice">
+                <span class="hand-emoji">✌️</span>
+            </div>
+        </div>
+
+        <div class="choices">
+            <button class="choice-btn" data-choice="rock">
+                <span class="choice-emoji">✊</span>
+                <span class="choice-label">rock</span>
+            </button>
+            <button class="choice-btn" data-choice="paper">
+                <span class="choice-emoji">✋</span>
+                <span class="choice-label">paper</span>
+            </button>
+            <button class="choice-btn" data-choice="scissors">
+                <span class="choice-emoji">✌️</span>
+                <span class="choice-label">scissors</span>
+            </button>
+        </div>
     </div>
-
-
-  </section>
-  
+    <script src="./src/index.js"></script>
 </body>
 </html>
