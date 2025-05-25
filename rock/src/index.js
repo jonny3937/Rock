@@ -89,3 +89,7 @@ function playGame(playerChoice) {
 }
 
 updateScore();
+function updateScore() {
+  document.getElementById("player-score").textContent = playerScore;
+  document.getElementById("computer-score").textContent = computerScore;
+}
